@@ -61,7 +61,7 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .navbar {
+  .navbar .rightNav{
     display: none;
   }
   .hamburger {
@@ -113,6 +113,7 @@ ul {
   .heroWrapper {
     flex-direction: column-reverse;
     width: 100%;
+    justify-content: space-evenly;
   }
   .heroLeft {
     width: 100%;
