@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <section class="container">
+    <div class="container">
       <header class="header">
         <div class="navbar">
           <div class="leftNav"><a href="#">Randhir</a></div>
@@ -24,12 +24,12 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </div>
-          <!-- <div class="hamburger">
-            <img src="./Images/menu.png" alt="ham-menu">
-          </div> -->
+          <div class="hamburger">
+            <img src="./Images/menu.png" alt="ham-menu" />
+          </div>
         </div>
       </header>
-      <section class="heroSection">
+      <section class="hero">
         <div class="heroWrapper">
           <div class="heroLeft">
             <h1>Hi, I am John, Creative Technologist</h1>
@@ -47,8 +47,7 @@
           </div>
         </div>
       </section>
-    </section>
-
+    </div>
     <section class="recentPosts">
       <div class="postsWrapper">
         <div class="postTopBar">
@@ -60,9 +59,9 @@
             <div class="postCard">
               <h3>Making a design system from scratch</h3>
               <div class="dateWrapper">
-                <h4>12 Feb 2020</h4>
-                <h4>|</h4>
-                <h4>Design, Pattern</h4>
+                <span>12 Feb 2020</span>
+                <span>|</span>
+                <span>Design, Pattern</span>
               </div>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -75,9 +74,9 @@
             <div class="postCard">
               <h3>Creating pixel perfect icons in Figma</h3>
               <div class="dateWrapper">
-                <h4>12 Feb 2020</h4>
-                <h4>|</h4>
-                <h4>Icon, Design</h4>
+                <span>12 Feb 2020</span>
+                <span>|</span>
+                <span>Icon, Design</span>
               </div>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -89,70 +88,83 @@
         </div>
       </div>
     </section>
+    <div class="container">
+      <section class="featuredWorks">
+        <h4>Featured Works</h4>
+        <div class="workCards">
+          <div class="workImage">
+            <img src="./Images/Demo.jpg" alt="Demo image" />
+          </div>
+          <div class="workContent">
+            <h2>Designing Dashboards</h2>
+            <div class="categoryWrap">
+              <div class="yearBox">2020</div>
+              <h3>Dashboard</h3>
+            </div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+        <div class="workCards">
+          <div class="workImage">
+            <img src="./Images/Demo.jpg" alt="Demo image" />
+          </div>
+          <div class="workContent">
+            <h2>Vibrant Portraits of 2020</h2>
+            <div class="categoryWrap">
+              <div class="yearBox">2018</div>
+              <h3>Illustration</h3>
+            </div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+        <div class="workCards">
+          <div class="workImage">
+            <img src="./Images/Demo.jpg" alt="Demo image" />
+          </div>
+          <div class="workContent">
+            <h2>36 Days of Malayalam type</h2>
+            <div class="categoryWrap">
+              <div class="yearBox">2018</div>
+              <h3>Typography</h3>
+            </div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <section class="featuredWorks">
-      <h4>Featured Works</h4>
-      <div class="workCards">
-        <div class="workImage">
-          <img src="./Images/Demo.jpg" alt="Demo image" />
+      <footer class="footer">
+        <div class="iconContainer">
+          <ul>
+            <li>
+              <a href="#"><img src="./Images/fb.png" alt="faceBookIcon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./Images/insta.png" alt="instaIcon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./Images/Group.png" alt="twitterIcon" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./Images/Linkedin.png" alt="linkdInIcon"
+              /></a>
+            </li>
+          </ul>
         </div>
-        <div class="workContent">
-          <h2>Designing Dashboards</h2>
-          <div class="categoryWrap">
-            <div class="yearBox">2020</div>
-            <h3>Dashboard</h3>
-          </div>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-        </div>
-      </div>
-      <div class="workCards">
-        <div class="workImage">
-          <img src="./Images/Demo.jpg" alt="Demo image" />
-        </div>
-        <div class="workContent">
-          <h2>Vibrant Portraits of 2020</h2>
-          <div class="categoryWrap">
-            <div class="yearBox">2018</div>
-            <h3>Illustration</h3>
-          </div>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-        </div>
-      </div>
-      <div class="workCards">
-        <div class="workImage">
-          <img src="./Images/Demo.jpg" alt="Demo image" />
-        </div>
-        <div class="workContent">
-          <h2>36 Days of Malayalam type</h2>
-          <div class="categoryWrap">
-            <div class="yearBox">2018</div>
-            <h3>Typography</h3>
-          </div>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="iconContainer">
-        <a href="#"><img src="./Images/fb.png" alt="" /></a>
-        <a href="#"><img src="./Images/insta.png" alt="" /></a>
-        <a href="#"><img src="./Images/Group.png" alt="" /></a>
-        <a href="#"><img src="./Images/Linkedin.png" alt="" /></a>
-      </div>
-      <p>Copyright ©2020 All rights reserved</p>
-    </footer>
+        <p>Copyright ©2020 All rights reserved</p>
+      </footer>
+    </div>
   </body>
 </html>
