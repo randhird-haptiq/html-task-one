@@ -44,7 +44,7 @@ ul {
 }
 .navItems {
   display: flex;
-  gap: 35px;
+  gap: 33px;
 }
 .navItems li a {
   font-size: 20px;
@@ -136,7 +136,6 @@ ul {
 }
 .recentPosts {
   width: 100%;
-  padding: 25px;
   background: #edf7fa;
 }
 .postTopBar {
