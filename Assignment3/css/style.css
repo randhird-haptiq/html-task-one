@@ -283,12 +283,12 @@ h1 {
 
 .featureImg img {
   width: 100%;
-  filter: drop-shadow(15px 15px 0px #6c00ff);
+  filter: drop-shadow(32px 32px 0px #6c00ff);
 }
 
 .featuretwo .featureImg img {
   width: 100%;
-  filter: drop-shadow(-15px -15px 0px #6c00ff);
+  filter: drop-shadow(-32px -32px 0px #6c00ff);
 }
 
 @media (max-width: 768px) {
@@ -301,7 +301,7 @@ h1 {
   .featureContent,
   .featureImg,
   .featureDown {
-    width: 100%;
+    width: 90%;
   }
 
   .featuretwo {
