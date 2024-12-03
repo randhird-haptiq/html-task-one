@@ -466,6 +466,7 @@ h1 {
   display: flex;
   border-radius: 40px;
   justify-content: space-between;
+  align-items: center;
 }
 .testimonialImgWrapper {
   width: 45%;
