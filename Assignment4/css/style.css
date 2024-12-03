@@ -118,6 +118,9 @@ h1 {
 .languageWrapper a:hover {
   color: #ba7894;
 }
+.hamburger{
+  display: none;
+}
 @media (max-width: 992px) {
   .navWrapper {
     flex-direction: column;
@@ -135,7 +138,17 @@ h1 {
     padding: 10px 20px;
   }
 }
-
+@media (max-width: 992px) {
+  .navWrapper{
+    flex-direction: row;
+  }
+  .rightNav{
+    display: none;
+  }
+  .hamburger{
+    display: block
+  }
+}
 /* ------------Hero Section------------- */
 
 .hero {
