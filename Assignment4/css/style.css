@@ -69,11 +69,11 @@ h1 {
   max-width: 1185px;
   margin: 0 auto;
   padding: 20px;
-  /* margin-bottom: 108px; */
 }
+/* ---------Header----------- */
 
 .navWrapper {
-  padding: 33px 20px;
+  padding: 23px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,6 +81,7 @@ h1 {
 .rightNav {
   display: flex;
   gap: 46px;
+  align-items: center;
 }
 .navItems ul {
   display: flex;
@@ -93,6 +94,7 @@ h1 {
 }
 .languageWrapper a {
   padding: 8px 16px;
+  font-weight: 700;
 }
 .navButtonWrapper ul {
   display: flex;
@@ -105,22 +107,23 @@ h1 {
   padding: 14px 24px;
   border: 1.5px solid #141414;
   border-radius: 5px;
-}
-.navButtonWrapper ul li:last-child a {
-  color: white;
-  background-color: #141414;
+  display: inline-block;
 }
 
-.navButtonWrapper ul li:last-child a:hover {
-  background-color: #333333;
+.navButtonWrapper ul li a:hover {
+  background-color: #141414;
   color: #f0f0f0;
+}
+.navItems ul li a:hover,
+.languageWrapper a:hover{
+  color: #ba7894;
 }
 
 /* ------------Hero Section------------- */
 
 .hero {
   max-width: 100vw;
-  min-height: calc(100vh - 114px);
+  min-height: calc(100vh - 100px);
   background-image: url(../images/BannerImg.png);
   background-size: contain;
   background-position: right;
@@ -129,7 +132,7 @@ h1 {
 }
 .heroLeft {
   width: 70%;
-  min-height: calc(100vh - 114px);
+  min-height: calc(100vh - 100px);
   background: linear-gradient(
     89.61deg,
     #422a3c 55.75%,
@@ -140,7 +143,6 @@ h1 {
   );
 
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: end;
 }
@@ -204,14 +206,27 @@ h1 {
   border: none;
   cursor: pointer;
 }
+.searchForm .search button:hover{
+  background-color: #422a3c;
+}
+
+
+/* --------servicesSlider----------- */
 .servicesSlider{
   margin-bottom: 50px;
+}
+.servicesSlider .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.servicesSlider button{
+  border: none;
 }
 .servicesWrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
-  /* gap: 53px; */
   justify-content: center;
   align-items: center;
   position: relative;
@@ -264,9 +279,9 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+
 .serviceCardWrapper {
   width: 24%;
-  /* height: 536px; */
   display: flex;
   flex-direction: column;
   border-radius: 24px;
@@ -309,7 +324,9 @@ h1 {
   display: flex;
   gap: 10px;
   align-items: center;
+  margin-bottom: 24px;
 }
+
 .serviceContentWrap a {
   font-family: "Playfair Display", serif;
   display: inline-block;
@@ -321,9 +338,13 @@ h1 {
   color: #ba7894;
   border-radius: 8px;
 }
+.serviceContentWrap a:hover{
+  background-color:  #BA7894;
+  color: #FFF;
+}
 /* ---------------- */
 .testimonials{
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(128.1deg, #FDFDFD 5.48%, #F0F0F0 89.93%);
 }
 .testimonials h5 {
@@ -400,7 +421,7 @@ h1 {
 }
 
 
-
+/* ------------footer--------------- */
 
 .footer {
   background-color: #241520;
@@ -416,6 +437,9 @@ h1 {
 .footerRight {
   display: flex;
   gap: 10px;
+}
+.footerBox a img:hover{
+  background-color: #BA7894;
 }
 .footerContentWrap {
   color: #fff;
@@ -443,6 +467,9 @@ h1 {
   font-weight: 700;
   line-height: 30.8px;
   margin-bottom: 21px;
+}
+.footerContentWrap a:hover{
+  color: #BA7894;
 }
 .postFooter {
   background: #160813;
