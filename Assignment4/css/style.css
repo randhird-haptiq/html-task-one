@@ -162,7 +162,6 @@ h1 {
     rgba(66, 42, 60, 0) 99.7%
   );
   z-index: 2;
-
 }
 .hero .container {
   min-height: calc(100vh - 100px);
@@ -303,7 +302,6 @@ h1 {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 /* --------service------------- */
 .servicesWrapper h6 {
   font-size: 18px;
@@ -408,16 +406,16 @@ h1 {
   color: #fff;
 }
 @media (max-width: 992px) {
-  .serviceContentWrap a{
+  .serviceContentWrap a {
     padding: 5px 50px;
   }
 }
-@media(max-width: 768px){
-  .servicesContainer{
+@media (max-width: 768px) {
+  .servicesContainer {
     flex-direction: column;
     gap: 50px;
   }
-  .serviceCardWrapper{
+  .serviceCardWrapper {
     width: 100%;
     text-align: center;
     display: flex;
@@ -425,7 +423,6 @@ h1 {
     align-items: center;
     justify-content: center;
   }
-
 }
 
 /* -------testimonials--------- */
@@ -506,7 +503,17 @@ h1 {
 .commentBtn button {
   border: none;
 }
-
+@media (max-width: 768px) {
+  .testimonialWrapper {
+    flex-direction: column;
+  }
+  .testimonialImgWrapper {
+    width: 100%;
+  }
+  .testimonialContentWrap {
+    width: 100%;
+  }
+}
 /* ------------footer--------------- */
 
 .footer {
@@ -568,4 +575,26 @@ h1 {
   letter-spacing: -0.01em;
   text-align: center;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .footerIconWrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .footerContentWrap {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .explore,
+  .utilityPages,
+  .keepInTouch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
