@@ -148,6 +148,12 @@ h1 {
   .hamburger{
     display: block
   }
+  h2{
+    font-size: 32px;
+  }
+  h3{
+    font-size: 28px;
+  }
 }
 /* ------------Hero Section------------- */
 
@@ -269,7 +275,7 @@ h1 {
 
   .searchForm {
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
   }
 
   .searchForm input {
@@ -525,6 +531,9 @@ h1 {
   }
   .testimonialContentWrap {
     width: 100%;
+  }
+  .testimonialContentWrap p{
+    font-size: 16px;
   }
 }
 /* ------------footer--------------- */
