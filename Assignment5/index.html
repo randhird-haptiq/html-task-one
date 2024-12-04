@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Assignment 5</title>
 
     <link
       rel="stylesheet"
@@ -13,25 +13,28 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
-      integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
-      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+
   </head>
   <body>
+
+
+    
     <header class="header">
       <nav class="navbar navbar-expand-md">
         <div class="container d-flex justify-content-between">
           <a class="navbar-brand" href="#"><h3>BrandName</h3></a>
-          <div class="navbar-collapse justify-content-between">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between navLinkWrapper" id="navbarContent">
             <ul class="navbar-nav ms-5">
               <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
@@ -52,17 +55,19 @@
         </div>
       </nav>
     </header>
+    
+    
 
     <!-- Hero Section -->
     <section class="hero">
       <div class="heroLeft"></div>
       <div class="container text-white hero-content">
         <div class="col-md-6">
-          <h1 class="display-4 fw-bold">We Ensure A Best Insurance Service</h1>
+          <h1>We Ensure A Best Insurance Service</h1>
           <h4>
             We know how large objects will act, but things on a small scale.
           </h4>
-          <div class="mt-4 col-lg-12 col-md-12 col-sm-6 heroButtonWrapper">
+          <div class="col-md-12 heroButtonWrapper">
             <button class="btn btn-primary btn-lg me-2">Get Quote Now</button>
             <button class="btn btn-outline-light btn-lg">Learn More</button>
           </div>
@@ -190,7 +195,7 @@
             of Classical physics: Newtonian mechanics
           </p>
         </div>
-        <div class="row">
+        <div class="row gy-5">
           <div class="col-md-4 col-sm-12">
             <div class="pricingCards">
               <h3>FREE</h3>
@@ -394,49 +399,49 @@
             <h5>Contact Us</h5>
             <h2>Make an Appointment</h2>
             <form>
-             <div class="inputWrapper">
-              <div class="row g-3">
-                <div class="col">
-                  <input
-                    type="text"
-                    class="form-control inputGroup-sizing-default"
-                    placeholder="Full Name *"
-                    required
-                  />
+              <div class="inputWrapper">
+                <div class="row g-3">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control inputGroup-sizing-default"
+                      placeholder="Full Name *"
+                      required
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email *"
+                      required
+                    />
+                  </div>
                 </div>
-                <div class="col">
-                  <input
-                    type="email"
+                <div class="row g-3">
+                  <div class="col">
+                    <select class="form-select" required>
+                      <option value="" disabled selected>Please Select</option>
+                      <option value="Service 1">Service 1</option>
+                      <option value="Service 2">Service 2</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <select class="form-select" required>
+                      <option value="" disabled selected>4:00 Available</option>
+                      <option value="3:00">3:00</option>
+                      <option value="5:00">5:00</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="textAreaWrapper">
+                  <textarea
                     class="form-control"
-                    placeholder="Email *"
-                    required
-                  />
+                    rows="4"
+                    placeholder="Message"
+                  ></textarea>
                 </div>
               </div>
-              <div class="row g-3">
-                <div class="col">
-                  <select class="form-select" required>
-                    <option value="" disabled selected>Please Select</option>
-                    <option value="Service 1">Service 1</option>
-                    <option value="Service 2">Service 2</option>
-                  </select>
-                </div>
-                <div class="col">
-                  <select class="form-select" required>
-                    <option value="" disabled selected>4:00 Available</option>
-                    <option value="3:00">3:00</option>
-                    <option value="5:00">5:00</option>
-                  </select>
-                </div>
-              </div>
-              <div class="textAreaWrapper">
-                <textarea
-                  class="form-control"
-                  rows="4"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-             </div>
               <button type="submit" class="btn btn-primary">
                 Book Appointment
               </button>
@@ -446,9 +451,135 @@
       </div>
     </section>
 
+    <!-- consulting business -->
+    <section class="consulting">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <h3>Consulting Agency For Your Business</h3>
+            <p>the quick fox jumps over the lazy dog</p>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-primary">Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer section -->
-    <footer>
-      
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-12 col-md-2">
+            <h5>Company Info</h5>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Carrier</a></li>
+              <li><a href="#">We are hiring</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2">
+            <h5>Legal</h5>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Compliance</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2">
+            <h5>Features</h5>
+            <ul>
+              <li><a href="#">Business Marketing</a></li>
+              <li><a href="#">User Analytics</a></li>
+              <li><a href="#">Live Chat</a></li>
+              <li><a href="#">Unlimited Support</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2">
+            <h5>Resources</h5>
+            <ul>
+              <li><a href="#">IOS and Android</a></li>
+              <li><a href="#">Watch a Drama</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h5>Get In Touch</h5>
+            <ul class="getInTouch">
+              <li>
+                <img
+                  src="./images/footer/Vector (11).png"
+                  alt=""
+                  class="img-fluid me-2"
+                />
+                <a href="#">(480) 555-0103</a>
+              </li>
+              <li>
+                <img
+                  src="./images/footer/Vector (12).png"
+                  alt=""
+                  class="img-fluid me-2"
+                />
+                <a href="#">4517 Washington Ave. Manchester, Kentucky 39495</a>
+              </li>
+              <li>
+                <img
+                  src="./images/footer/Vector (13).png"
+                  alt=""
+                  class="img-fluid me-2"
+                />
+                <a href="#">debra.holt@example.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <!-- postfooter -->
+    <section class="postFooter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <h6>Made With Love By Figmaland All Right Reserved</h6>
+          </div>
+          <div class="col-md-2">
+            <div class="iconWrapper">
+              <div class="postFooterIcon">
+                <img
+                  class="img-fluid"
+                  src="./images/postfooter/Vector (14).png"
+                  alt=""
+                />
+              </div>
+              <div class="postFooterIcon">
+                <img
+                  class="img-fluid"
+                  src="./images/postfooter/Vector (15).png"
+                  alt=""
+                />
+              </div>
+              <div class="postFooterIcon">
+                <img
+                  class="img-fluid"
+                  src="./images/postfooter/Vector (16).png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+    integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
   </body>
 </html>

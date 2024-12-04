@@ -8,6 +8,13 @@
 body {
   background-color: black;
 }
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
 h1 {
   font-family: Montserrat;
   font-size: 58px;
@@ -63,6 +70,10 @@ p {
   color: #fff;
   background-color: transparent;
 }
+.navbar .container{
+  position: relative;
+  z-index: 100;
+}
 .navbar a,
 .navbar button {
   font-size: 14px;
@@ -72,13 +83,51 @@ p {
   text-align: center;
   color: #fff;
 }
+.navbar-toggler {
+  display: none; 
+}
+
+@media (max-width: 991px) {
+  .navLinkWrapper {
+    display: none;  
+  }
+
+  .navbar-toggler {
+    display: block; 
+  }
+
+  .navbar-brand {
+    display: block;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    text-align: center;
+  }
+
+  .btn {
+    display: none; 
+  }
+
+  .navbar-collapse.collapse.show {
+    display: block;
+  }
+}
+
+
+
+
 
 /* -----------Hero section------------- */
 
 .hero {
   background-image: url(../images/hero-cover.1.jpg);
   margin-top: -90px;
-  height: 100vh;
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -88,7 +137,7 @@ p {
 .heroLeft {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(
     89.85deg,
     #000000 0.13%,
@@ -98,7 +147,7 @@ p {
   z-index: 2;
 }
 .hero .container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -232,9 +281,11 @@ p {
 .pricewrap h5 {
   color: #23a6f0;
 }
+
 .pricingCards a,
 .contactUsWrapper button,
-.memberBtn{
+.memberBtn,
+.consulting button {
   padding: 15px 40px;
   background: #23a6f0;
   text-decoration: none;
@@ -294,7 +345,7 @@ p {
 
 /* -----------contact us section------------ */
 .contactUs {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../images/contact-cover.1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -304,7 +355,7 @@ p {
   padding: 50px 0;
 }
 .contactUsLeft {
-  height: 100vh;
+  min-height: 100vh;
   top: 0;
   width: 100%;
   background: linear-gradient(
@@ -333,4 +384,68 @@ p {
 }
 .textAreaWrapper {
   margin-bottom: 40px;
+}
+
+/* ------------------- */
+.consulting {
+  padding: 40px 0;
+  background-color: #fff;
+}
+.consulting h3 {
+  color: #252b42;
+}
+.consulting p {
+  text-align: left;
+  color: #737373;
+}
+
+/* -----------footer----------- */
+.footer {
+  padding: 50px 0;
+  background: #252b42;
+}
+.footer h5 {
+  color: #fff;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.footer ul {
+  padding: 0;
+}
+.footer a {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+}
+.footer li {
+  margin-bottom: 10px;
+}
+.footerIconWrap {
+  height: 22px;
+  width: 22px;
+}
+.getInTouch li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.postFooter{
+  padding: 25px 0;
+  background-color: #FFF;
+}
+.postFooterIcon {
+  width: 22px;
+  height: 22px;
+}
+.iconWrapper{
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+.postFooter h6{
+  color: #737373;
+
 }
