@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: black;
+}
+h1 {
+  font-family: Montserrat;
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 80px;
+  letter-spacing: 0.20000000298023224px;
+  margin-bottom: 35px;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.10000000149011612px;
+  color: #fff;
+}
+h4 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.20000000298023224px;
+}
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+}
+
+/* -----------Header------------- */
+
+.header .navbar {
+  z-index: 4;
+  position: relative;
+  padding: 20px 0px;
+  color: #fff;
+  background-color: transparent;
+}
+.navbar a,
+.navbar button {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #fff;
+}
+
+/* -----------Hero section------------- */
+
+.hero {
+  background-image: url(../images/hero-cover.1.jpg);
+  margin-top: -90px;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.heroLeft {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    89.85deg,
+    #000000 0.13%,
+    #000000 0.14%,
+    rgba(0, 0, 0, 0) 99.56%
+  );
+  z-index: 2;
+}
+.hero .container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 3;
+  position: relative;
+}
+
+.heroButtonWrapper button {
+  padding: 15px 36px;
+  border-radius: 37px;
+}
+
+/* --------cards section---------- */
+.cards {
+  width: 100%;
+  background: #252b42;
+  color: #fff;
+  padding: 96px 0px;
+}
+
+.cardImgWrapper {
+  display: block;
+  margin-bottom: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  padding: 40px 45px;
+  background: #252b42;
+  color: #fff;
+}
+
+/* ---------industry seciton--------- */
+.industry {
+  width: 100%;
+  background: #8ec2f2;
+  padding: 112px 0px;
+}
+.industry h2,
+.pricing h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.industry p,
+.pricing p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 120px;
+}
+.industryImgWrap {
+  width: 72px;
+  height: 72px;
+}
+
+.industryCard {
+  position: relative;
+  margin: 50px 40px;
+
+  padding: 40px;
+}
+.industryImgWrap {
+  position: absolute;
+  left: -40px;
+}
+.starWrapper {
+  gap: 5px;
+  margin-bottom: 15px;
+}
+.star {
+  width: 22px;
+  height: 22px;
+}
+
+.industryCard p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: #737373;
+  margin: 0;
+}
+
+/* -------pricing--------- */
+.pricing {
+  background: #252b42;
+  padding: 112px 0;
+}
+.pricingCards {
+  background-color: #fff;
+  padding: 50px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 10px;
+}
+
+.pricingCards h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.10000000149011612px;
+  color: #252b42;
+}
+.pricingCards h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.10000000149011612px;
+  color: #737373;
+}
+.pricewrap h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+  color: #23a6f0;
+}
+.pricewrap h5 {
+  color: #23a6f0;
+}
+.pricingCards a,
+.contactUsWrapper button,
+.memberBtn{
+  padding: 15px 40px;
+  background: #23a6f0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  border: none;
+}
+.featureListWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.listWrap {
+  display: flex;
+  gap: 1.5px;
+  align-items: center;
+}
+.listIconWrap {
+  height: 32px;
+  width: 32px;
+}
+.listWrap h6 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  color: #252b42;
+  margin: 0;
+}
+.newCard {
+  height: 90px;
+  width: 90px;
+  background: #e77c40;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -40px;
+  right: 40px;
+}
+.newCard h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: white;
+}
+.middlePricingCard {
+  position: relative;
+}
+
+/* -----------contact us section------------ */
+.contactUs {
+  height: 100vh;
+  background-image: url(../images/contact-cover.1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  padding: 50px 0;
+}
+.contactUsLeft {
+  height: 100vh;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(
+    89.83deg,
+    #ffffff 14.24%,
+    #ffffff 14.25%,
+    rgba(255, 255, 255, 0) 99.55%
+  );
+  position: absolute;
+  z-index: 2;
+}
+.contactUs .container {
+  position: relative;
+  z-index: 3;
+}
+.contactUsWrapper {
+  padding: 40px 0;
+}
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contactUsWrapper h5 {
+  text-align: left;
+}
+.textAreaWrapper {
+  margin-bottom: 40px;
+}
