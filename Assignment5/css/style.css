@@ -90,6 +90,11 @@ p {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 991px) and (min-width: 768px) {
+  .header .container{
+    flex-direction: column;
+  }
+}
 
 @media (max-width: 991px) {
   .navLinkWrapper {
@@ -121,6 +126,7 @@ p {
     display: block;
   } */
 }
+
 
 /* -----------Hero section------------- */
 
@@ -161,6 +167,16 @@ p {
 .heroButtonWrapper button {
   padding: 15px 36px;
   border-radius: 37px;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .hero {
+    margin-top: -184px;
+  }
+  .hero h1 {
+    line-height: 0;
+    margin-bottom: 0;
+  }
 }
 
 /* --------cards section---------- */
