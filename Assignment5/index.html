@@ -22,28 +22,25 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar navbar-expand-md">
-        <div class="container d-flex justify-content-between">
-          <a class="navbar-brand" href="#"><h3>BrandName</h3></a>
+    <header>
+      <nav class="navbar navbar-expand-lg text-white">
+        <div class="container navContainer">
+          <a class="navbar-brand text-white brandName" href="#">BrandName</a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler togglerBtn"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarContent"
-            aria-controls="navbarContent"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="collapse navbar-collapse navLinkWrapper"
-            id="navbarContent"
-          >
-            <ul class="navbar-nav ms-5">
+          <div class="collapse navbar-collapse navBar" id="navbarNav">
+            <ul class="navbar-nav d-flex navItems">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Product</a>
@@ -51,15 +48,26 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
-            <button class="btn loginBtn me-2">Login</button>
+
+            <div class="login">
+              <span><a class="nav-link" href="#">Login</a></span>
+              <button
+                class="btn d-flex align-items-center text-white becomeMember"
+              >
+                <span
+                  >Become a member <img src="./images/Vector (17).png" alt=""
+                /></span>
+                <div>
+                  <img src="./images/icn arrow-right .icn-xs.png" alt="" />
+                </div>
+              </button>
+            </div>
           </div>
-          <button class="btn btn-primary memberBtn">
-            Become a Member <img src="./images/Vector (17).png" alt="" />
-          </button>
         </div>
       </nav>
     </header>

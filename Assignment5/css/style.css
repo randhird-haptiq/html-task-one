@@ -63,76 +63,89 @@ p {
 
 /* -----------Header------------- */
 
-.header .navbar {
-  z-index: 4;
+.navBar {
   position: relative;
-  padding: 20px 0px;
-  color: #fff;
-  background-color: transparent;
-}
-.navbar .container {
-  position: relative;
-  z-index: 100;
-}
-.navbar a,
-.navbar button {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: 0.20000000298023224px;
-  text-align: center;
-  color: #fff;
-}
-.navbar-toggler {
-  display: none;
-}
-.loginBtn:hover {
-  color: #000;
-}
-.navLinkWrapper {
+  z-index: 3;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-@media (max-width: 991px) and (min-width: 768px) {
-  .header .container {
-    flex-direction: column;
+
+.navbar-toggler {
+  z-index: 4;
+}
+
+.becomeMember {
+  gap: 15px;
+  background-color: #23a6f0;
+  min-height: 52px;
+  width: 214px;
+  align-content: center;
+  justify-content: center;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #307197;
   }
 }
 
-@media (max-width: 991px) {
-  .navLinkWrapper {
+.navItems {
+  gap: 21px;
+}
+
+.navItems a {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.brandName {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  z-index: 4;
+}
+
+.login {
+  gap: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.login span a {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  align-items: center;
+
+  &:hover {
+    color: #000000;
+  }
+}
+
+.becomeMember span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+}
+@media (max-width: 992px) {
+  .becomeMember,
+  .login {
     display: none;
-  }
-
-  .navbar-toggler {
-    display: block;
-  }
-
-  .navbar-brand {
-    display: block;
-  }
-
-  .navbar-nav {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .navbar-nav .nav-item {
-    text-align: center;
   }
 }
 @media (max-width: 767px) {
-  .loginBtn,
-  .memberBtn {
+  .becomeMember,
+  .login {
     display: none;
   }
 }
-
 /* -----------Hero section------------- */
 
 .hero {
   background-image: url(../images/hero-cover.1.jpg);
-  margin-top: -92px;
+  margin-top: -68px;
   min-height: 100vh;
   background-size: cover;
   background-position: center;
@@ -171,7 +184,7 @@ p {
 
 @media (max-width: 991px) and (min-width: 768px) {
   .hero {
-    margin-top: -184px;
+    margin-top: -58px;
   }
   .hero h1 {
     line-height: 58px;
