@@ -62,7 +62,9 @@ p {
 }
 
 /* -----------Header------------- */
-
+.header{
+  padding: 12px 0;
+}
 .navBar {
   position: relative;
   z-index: 3;
@@ -145,7 +147,7 @@ p {
 
 .hero {
   background-image: url(../images/hero-cover.1.jpg);
-  margin-top: -68px;
+  margin-top: -92px;
   min-height: 100vh;
   background-size: cover;
   background-position: center;
@@ -184,7 +186,7 @@ p {
 
 @media (max-width: 991px) and (min-width: 768px) {
   .hero {
-    margin-top: -58px;
+    margin-top: -82px;
   }
   .hero h1 {
     line-height: 58px;
