@@ -454,3 +454,12 @@ p {
 .postFooter h6 {
   color: #737373;
 }
+@media(max-width: 768px){
+  .consulting, .postFooter{
+    background-color: #252b42;
+  }
+  .postFooter h6,
+  .consulting p{
+    color: #FFF;
+  }
+}
