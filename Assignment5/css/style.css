@@ -70,7 +70,7 @@ p {
   color: #fff;
   background-color: transparent;
 }
-.navbar .container{
+.navbar .container {
   position: relative;
   z-index: 100;
 }
@@ -84,16 +84,19 @@ p {
   color: #fff;
 }
 .navbar-toggler {
-  display: none; 
+  display: none;
+}
+.loginBtn:hover{
+  color: #000;
 }
 
 @media (max-width: 991px) {
   .navLinkWrapper {
-    display: none;  
+    display: none;
   }
 
   .navbar-toggler {
-    display: block; 
+    display: block;
   }
 
   .navbar-brand {
@@ -110,17 +113,13 @@ p {
   }
 
   .btn {
-    display: none; 
+    display: none;
   }
 
   .navbar-collapse.collapse.show {
     display: block;
   }
 }
-
-
-
-
 
 /* -----------Hero section------------- */
 
@@ -297,6 +296,9 @@ p {
   text-align: center;
   border: none;
 }
+.commonBtn:hover{
+  background-color: #252b42;
+}
 .featureListWrap {
   display: flex;
   flex-direction: column;
@@ -420,6 +422,9 @@ p {
   line-height: 24px;
   letter-spacing: 0.20000000298023224px;
 }
+.footer a:hover{
+  color: #23a6f0;
+}
 .footer li {
   margin-bottom: 10px;
 }
@@ -432,20 +437,19 @@ p {
   gap: 10px;
   align-items: center;
 }
-.postFooter{
+.postFooter {
   padding: 25px 0;
-  background-color: #FFF;
+  background-color: #fff;
 }
 .postFooterIcon {
   width: 22px;
   height: 22px;
 }
-.iconWrapper{
+.iconWrapper {
   margin: 0 auto;
   display: flex;
   gap: 20px;
 }
-.postFooter h6{
+.postFooter h6 {
   color: #737373;
-
 }
