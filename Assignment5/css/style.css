@@ -484,6 +484,15 @@ p {
 .postFooter h6 {
   color: #737373;
 }
+.icons{
+  height: 24px;
+  width: 24px;
+}
+.iconWrapper2{
+
+  display: none;
+}
+
 @media(max-width: 768px){
   .postFooter{
     background-color: #252b42;
@@ -497,13 +506,22 @@ p {
     font-size: 30px;
     line-height: 40px;
   }
-  .postFooter,
+  
   .consulting,
-  .footer{
+  .footer,
+  .postFooter{
     padding-left:87px;
     padding-right: 87px;
   }
   .consulting .container button{
     display: inline-block;
+  }
+  .iconWrapper{
+    display: none;
+  }
+  .iconWrapper2{
+    display: block;
+    display: flex;
+    gap: 10px;
   }
 }
