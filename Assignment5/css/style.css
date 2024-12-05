@@ -484,11 +484,10 @@ p {
   color: #737373;
 }
 @media(max-width: 768px){
-  .consulting, .postFooter{
+  .postFooter{
     background-color: #252b42;
   }
-  .postFooter h6,
-  .consulting p{
+  .postFooter h6{
     color: #FFF;
   }
   h2,
@@ -496,5 +495,14 @@ p {
   .industry h2{
     font-size: 30px;
     line-height: 40px;
+  }
+  .postFooter,
+  .consulting,
+  .footer{
+    padding-left:87px;
+    padding-right: 87px;
+  }
+  .consulting .container button{
+    display: inline-block;
   }
 }
