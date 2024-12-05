@@ -83,8 +83,12 @@ p {
 .navbar-toggler {
   display: none;
 }
-.loginBtn:hover{
+.loginBtn:hover {
   color: #000;
+}
+.navLinkWrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 991px) {
@@ -108,14 +112,14 @@ p {
   .navbar-nav .nav-item {
     text-align: center;
   }
-
-  .btn {
+  .loginBtn,
+  .memberBtn {
     display: none;
   }
 
-  .navbar-collapse.collapse.show {
+  /* .navbar-collapse.collapse.show {
     display: block;
-  }
+  } */
 }
 
 /* -----------Hero section------------- */
@@ -150,7 +154,7 @@ p {
   z-index: 3;
   position: relative;
 }
-
+.hero
 .heroButtonWrapper button {
   padding: 15px 36px;
   border-radius: 37px;
@@ -293,7 +297,7 @@ p {
   text-align: center;
   border: none;
 }
-.commonBtn:hover{
+.commonBtn:hover {
   background-color: #252b42;
 }
 .featureListWrap {
@@ -419,7 +423,7 @@ p {
   line-height: 24px;
   letter-spacing: 0.20000000298023224px;
 }
-.footer a:hover{
+.footer a:hover {
   color: #23a6f0;
 }
 .footer li {
