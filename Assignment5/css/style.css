@@ -171,6 +171,9 @@ p {
   .hero {
     margin-top: -184px;
   }
+  .hero h1{
+    line-height: 58px;
+  }
 }
 
 /* --------cards section---------- */
