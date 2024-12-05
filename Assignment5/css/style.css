@@ -154,7 +154,10 @@ p {
   z-index: 3;
   position: relative;
 }
-.hero
+.heroButtonWrapper{
+  display: flex;
+  gap:10px;
+}
 .heroButtonWrapper button {
   padding: 15px 36px;
   border-radius: 37px;
@@ -240,6 +243,16 @@ p {
   text-align: left;
   color: #737373;
   margin: 0;
+}
+@media(max-width: 768px){
+  .heroButtonWrapper{
+    flex-direction: column;
+  }
+  h1{
+    font-size: 40px;
+    line-height: 50px; /
+  }
+ 
 }
 
 /* -------pricing--------- */
@@ -461,5 +474,11 @@ p {
   .postFooter h6,
   .consulting p{
     color: #FFF;
+  }
+  h2,
+  .pricing h2,
+  .industry h2{
+    font-size: 30px;
+    line-height: 40px;
   }
 }
