@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 6</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="leftNav">
+            <a class="navbar-brand" href="#"
+              ><img src="./images/Logo.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse middleNav" id="navbarText">
+            <div class="middleNav">
+              <span class="deliver">Deliver to:</span>
+              <div class="addressWrapper">
+                <div class="locationIcon">
+                  <img
+                    class="img-fluid"
+                    src="./images/map-marker-alt.png"
+                    alt=""
+                  />
+                </div>
+                <p class="location">
+                  Current Location
+                  <span class="address">Mohammadpur Bus Stand, Dhaka</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="rightNav">
+            <a href=""><img src="./images/Search.png" alt="" />Search Food</a>
+            <a href="" class="loginBtn"
+              ><img src="./images/user.png" alt="" />Login</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="heroImgWrapper">
+          <img class="img-fluid" src="./images/FullMaggiePlate.png" alt="" />
+        </div>
+        <div class="col-md-7 heroContent">
+          <div class="headingWrapper">
+            <h1>Are you starving?</h1>
+            <h6>
+              Within a few clicks, find meals that are accessible near you
+            </h6>
+          </div>
+          <div class="col-md-12">
+            <div class="heroFormWrapper">
+              <div class="formButtonWrapper">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                  <li class="nav-item deliveryBtn" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="pills-home-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-home"
+                      aria-selected="true"
+                    >
+                      <img src="./images/DileveryIcon.png" alt="" />
+                      Delivery
+                    </button>
+                  </li>
+                  <li class="nav-item pickUpBtn" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-profile-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-profile"
+                      aria-selected="false"
+                    >
+                      <img src="./images/pickUpIcon.png" alt="" />
+                      Pickup
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="formInputWrapper">
+                <div class="tab-content" id="pills-tabContent">
+                  <div
+                    class="tab-pane show active"
+                    id="pills-home"
+                    role="tabpanel"
+                    aria-labelledby="pills-home-tab"
+                  >
+                    <div class="inputBtnWrapper">
+                      <div class="inputWrapper">
+                        <div class="inputImgWrapper">
+                          <img
+                            class="img-fluid"
+                            src="./images/inputImg.png"
+                            alt=""
+                          />
+                        </div>
+                        <input type="text" placeholder="Enter Your Address" />
+                      </div>
+                      <div class="heroBtnWrapper">
+                        <button type="submit">
+                          <img src="./images/searchBtnIcon.png" alt="" />
+                          Find Food
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade inputBtnWrapper"
+                    id="pills-profile"
+                    role="tabpanel"
+                    aria-labelledby="pills-profile-tab"
+                  >
+                    <div class="inputBtnWrapper">
+                      <div class="inputWrapper">
+                        <div class="inputImgWrapper">
+                          <img
+                            class="img-fluid"
+                            src="./images/inputImg.png"
+                            alt=""
+                          />
+                        </div>
+                        <input
+                          type="text"
+                          placeholder="Enter Pickup Location"
+                        />
+                      </div>
+                      <div class="heroBtnWrapper">
+                        <button type="submit">
+                          <img src="./images/searchBtnIcon.png" alt="" />
+                          Find Pickup
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dishes Section  -->
+    <section class="dishes">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-12">
+            <div class="dishCardWrapper">
+              <div class="imgWrapper">
+                <div class="offerLabel">
+                  <div class="offerNumber">
+                    <h2>15</h2>
+                  </div>
+                  <div class="perOff">
+                    <h5>%</h5>
+                    <h6>Off</h6>
+                  </div>
+                </div>
+                <img class="" src="./images/dishes/Image.png" alt="" />
+              </div>
+              <div>
+                <h6>Greys Vage</h6>
+                <h6 class="daysRemaining">6 Days Remaining</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="dishCardWrapper">
+              <div class="imgWrapper">
+                <div class="offerLabel">
+                  <div class="offerNumber">
+                    <h2>10</h2>
+                  </div>
+                  <div class="perOff">
+                    <h5>%</h5>
+                    <h6>Off</h6>
+                  </div>
+                </div>
+                <img src="./images/dishes/Image (1).png" alt="" />
+              </div>
+              <div>
+                <h6>Greys Vage</h6>
+                <h6 class="daysRemaining">6 Days Remaining</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="dishCardWrapper">
+              <div class="imgWrapper">
+                <div class="offerLabel">
+                  <div class="offerNumber">
+                    <h2>25</h2>
+                  </div>
+                  <div class="perOff">
+                    <h5>%</h5>
+                    <h6>Off</h6>
+                  </div>
+                </div>
+                <img src="./images/dishes/Image (2).png" alt="" />
+              </div>
+              <div>
+                <h6>Greys Vage</h6>
+                <h6 class="daysRemaining">6 Days Remaining</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="dishCardWrapper">
+              <div class="imgWrapper">
+                <div class="offerLabel">
+                  <div class="offerNumber">
+                    <h2>20</h2>
+                  </div>
+                  <div class="perOff">
+                    <h5>%</h5>
+                    <h6>Off</h6>
+                  </div>
+                </div>
+                <img src="./images/dishes/Image (3).png" alt="" />
+              </div>
+              <div>
+                <h6>Greys Vage</h6>
+                <h6 class="daysRemaining">6 Days Remaining</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search by food -->
+    <section class="searchByFood">
+      <div class="container">
+        <div class="sliderHeader">
+          <div class="sliderHeading">
+            <h4>Search By Food</h4>
+          </div>
+          <div class="sliderBtnWrapper">
+            <div class="viewAll">
+              <button>
+                View All <img src="./images/yellowRightArrow.png" alt="" />
+              </button>
+            </div>
+            <div class="sliderBtns">
+              <button class="sliderBtnLeft">
+                <div class="btnLeft">
+                  <img src="./images/arrowLeft.png" alt="" />
+                </div>
+              </button>
+              <button class="sliderBtnRight">
+                <div class="btnRight">
+                  <img src="./images/arrowRight.png" alt="" />
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="sliderItemsWrap">
+          <div class="itemsWrapper row">
+            <div class="col-md-2 sliderItem">
+              <div class="foodImgWrapper">
+                <img src="./images/slider/Image (7).png" alt="" />
+              </div>
+              <h6>Pizza</h6>
+            </div>
+            <div class="col-md-2 sliderItem">
+              <div class="foodImgWrapper">
+                <img src="./images/slider/Image (8).png" alt="" />
+              </div>
+              <h6>Burger</h6>
+            </div>
+            <div class="col-md-2 sliderItem">
+              <div class="foodImgWrapper">
+                <img src="./images/slider/Image (9).png" alt="" />
+              </div>
+              <h6>Noodles</h6>
+            </div>
+            <div class="col-md-2 sliderItem">
+              <div class="foodImgWrapper">
+                <img src="./images/slider/Image (10).png" alt="" />
+              </div>
+              <h6>Sub-sandwitch</h6>
+            </div>
+            <div class="col-md-2 sliderItem">
+              <div class="foodImgWrapper">
+                <img src="./images/slider/Image (11).png" alt="" />
+              </div>
+              <h6>Chowmein</h6>
+            </div>
+            <div class="col-md-2 sliderItem">
+              <div class="foodImgWrapper">
+                <img src="./images/slider/Image (12).png" alt="" />
+              </div>
+              <h6>Steak</h6>
+            </div>
+            <div class="col-md-2 sliderItem">
+              <div class="foodImgWrapper">
+                <img src="./images/slider/Image (9).png" alt="" />
+              </div>
+              <h6>Noodles</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Food Features -->
+    <section class="foodFeatures">
+      <div class="container">
+        <div class="row col-md-10 featureWrapper">
+          <div class="col-md-4 col-sm-12">
+            <div class="feature middleBorder">
+              <div class="featureImgWrap">
+                <img src="./images/features/Icon (1).png" alt="" />
+              </div>
+              <div class="featureContentWrap">
+                <h5>Daily Discounts</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="feature middleBorder">
+              <div class="featureImgWrap">
+                <img src="./images/features/Icon (2).png" alt="" />
+              </div>
+              <div class="featureContentWrap">
+                <h5>Daily Discounts</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="feature">
+              <div class="featureImgWrap">
+                <img src="./images/features/Icon (3).png" alt="" />
+              </div>
+              <div class="featureContentWrap">
+                <h5>Daily Discounts</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download section -->
+    <section class="download">
+      <div class="aboveContent"></div>
+      <div class="container">
+        <div class="row wrapDownload">
+          <div class="col-md-6 col-sm-12 downloadLeft">
+            <div class="wrapMobile">
+              <img src="./images/mobiles.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="wrapRight justify-content-center align-items-center">
+              <h2>Install the app</h2>
+              <p>
+                It's never been easier to order food. Look for the finest
+                discounts and you'll be lost in a world of delectable food.
+              </p>
+              <div class="wrapBothBtn">
+                <div class="wrapBtn">
+                  <div class="appIcon">
+                    <img
+                      src="./images/playstore.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="gPlayContent">
+                    <p>GET IT ON</p>
+                    <h6>Google Play</h6>
+                  </div>
+                </div>
+                <div class="wrapBtn">
+                  <div class="appIcon">
+                    <img src="./images/Apple logo.png" alt="" />
+                  </div>
+                  <div class="appleContent">
+                    <p>Download on the</p>
+                    <h6>App Store</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Details -->
+    <section class="details">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="detailsCardWrapper">
+            <div class="col-md-5">
+              <div class="detailsContent">
+                <div class="contentWrap">
+                  <h4>
+                    Best deals
+                    <span class="contentSpan">Crispy Sandwiches</span>
+                  </h4>
+                  <p>
+                    Enjoy the large size of sandwiches. Complete perfect slice
+                    of sandwiches.
+                  </p>
+                </div>
+                <a href="#"
+                  >PROCEED TO ORDER
+                  <img src="./images/CHEVRON-RIGHT.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="detailsImg rightImg">
+                <img src="./images/details/Right.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="detailsCardWrapper middleCard">
+            <div class="col-md-7">
+              <div class="detailsImg leftImg">
+                <img src="./images/details/Right.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="detailsContent">
+                <div class="contentWrap">
+                  <h4>
+                    Celebrate parties with
+                    <span class="contentSpan">Fried Chicken</span>
+                  </h4>
+                  <p>
+                    Get the best fried chicken smeared with a lip smacking lemon
+                    chili flavor. Check out best deals for fried chicken.
+                  </p>
+                </div>
+                <a href="#"
+                  >PROCEED TO ORDER
+                  <img src="./images/CHEVRON-RIGHT.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="detailsCardWrapper">
+            <div class="col-md-5">
+              <div class="detailsContent">
+                <div class="contentWrap">
+                  <h4>
+                    Wanna eat hot & spicy
+                    <span class="contentSpan">Pizza?</span>
+                  </h4>
+                  <p>
+                    Pair up with a friend and enjoy the hot and crispy pizza
+                    pops. Try it with the best deals.
+                  </p>
+                </div>
+                <a href="#"
+                  >PROCEED TO ORDER
+                  <img src="./images/CHEVRON-RIGHT.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="detailsImg rightImg">
+                <img src="./images/details/Right.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+        <div class="col-md-7 mx-auto">
+          <h3>Are you ready to order with the best deals?</h3>
+          <a href="#"
+            >PROCEED TO ORDER <img src="./images/CHEVRON-RIGHT.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+     <section class="footer">
+      <div class="preFooter">
+        <div class="container">
+       <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-4">
+              <h6>Company</h6>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>Contact</h6>
+              <ul>
+                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Partner with us</a></li>
+                <li><a href="#">Ride with us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>Legal</h6>
+              <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Refund & Cancellation</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="footerFormWrap">
+            <p class="formHeading">
+              FOLLOW US
+            </p>
+            <div class="footerIcons">
+              <div class="iconWrapper">
+                <img src="./images/footer/1 (1).png" alt="">
+              </div>
+              <div class="iconWrapper">
+                <img src="./images/footer/2 (1).png" alt="">
+              </div>
+              <div class="iconWrapper">
+                <img src="./images/footer/3 (1).png" alt="">
+              </div>
+            </div>
+            <div class="recieve">
+              Receive exclusive offers in your mailbox
+            </div>
+            <div class="footerInputBtn">
+              <div class="inputWrapper">
+                <img src="./images/footer/envelope.png" alt="">
+                <input type="text" placeholder="Enter your Email">
+              </div>
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+        </div>
+       </div>
+        </div>
+      </div>
+      <div class="postFooter">
+        <div class="container">
+          <div class="leftFooter">
+            <div class="rights">All rights Reserved &copy;</div>
+            <div class="compnyYear">Your Company, 2021</div>
+          </div>
+          <div class="rightFooter">
+            <div class="madeWith">Made with love by</div>
+            <div class="themewagon">Themewagon</div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".itemsWrapper").slick({
+          autoplay: true,
+          autoplaySpeed: 3000,
+          infinite: true,
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          responsive: [
+          {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 5,
+              },
+            },
+            {
+              breakpoint: 769,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+          prevArrow: $(".sliderBtnLeft"),
+          nextArrow: $(".sliderBtnRight"),
+        });
+      });
+      $(".sliderBtnLeft").on("click", function () {});
+      $(".sliderBtnRight").on("click", function () {});
+    </script>
+  </body>
+</html>
